@@ -9,6 +9,7 @@
     <link rel="stylesheet" href={{ asset('css/style.css') }}>
     
 </head>
+
 <body>
     <h1>Registration page</h1>
     <script src="js/script.js"></script>
