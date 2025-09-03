@@ -4,40 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registration page</title>
-    {{-- <link rel="stylesheet" href="css/register.css"> --}}
-    {{-- <link rel="stylesheet" href={{ asset('css/register.css') }}> --}}
-    
+    <title>Login form</title>
 </head>
-
 <body>
-    @extends('layouts.app')
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Swings</h2>
+            </div>
 
-    @section('content')
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-body">
-                        <form method="POST" action="{{ route('register') }}">
-                            @csrf
+            <div class="menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            </div>
 
-                            <div class="form-group row">
-                                <label for="mobile" class="col-md-4 col-form-label text-md-right">Mobile Number</label>
+            <div class="form">
+                <h2>Login here</h2>
+                <input type="email/number" name="email" placeholder="Enter Email/Mobile Number">
+                <button class="btnn"><a href="#">Login</a></button>
 
-                                <div class="form-group row">
-                                    <label for="mobile" class="col-md-4 col-form-label text-md-right">Mobile</label>
-                                </div>
-                        </form>
-                    </div>
-                </div>
+                <p class="link">Don't have an account
+                    <a href="/register">Sign up Here</a>
+                </p>
+                <p class="liw">Log in with</p>
             </div>
         </div>
     </div>
-        
-    @endsection
-
-    {{-- <script src="js/register.js"></script> --}}
-   
 </body>
 </html>
